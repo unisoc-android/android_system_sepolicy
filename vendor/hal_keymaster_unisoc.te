@@ -1,0 +1,7 @@
+type hal_keymaster_unisoc, domain;
+hal_server_domain(hal_keymaster_unisoc, hal_keymaster)
+
+type hal_keymaster_unisoc_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_keymaster_unisoc)
+
+get_prop(hal_keymaster_unisoc, vendor_security_patch_level_prop);
